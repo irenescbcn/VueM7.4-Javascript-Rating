@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.rating{
+    width: 80%; 
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+
+.rating input{
+    display: none;
+}
+
+
+.rating label{
+    cursor: pointer;
+    color: #ff8474;
+}
+
+
+label:hover:before,
+label:hover ~ label:before,
+input:checked ~ label:before
+{
+	color: #9f5f80;
+}
+

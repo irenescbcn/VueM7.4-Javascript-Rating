@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.rating{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.rating input{
+    margin: 0;
+    display: none;
+    justify-self: space-around;
+}
+
+.rating label{
+    cursor: pointer;
+    color: var(--check-primary, #ff8474);
+}
+
+label:hover:before,
+label:hover ~ label:before,
+input:checked ~ label:before
+{
+	color: var(--check-secondary, #9f5f80);
+}
